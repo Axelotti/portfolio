@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axel Cortes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Page show/hide */
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ═══════════════════ SIDEBAR ═══════════════════ -->
+    <aside class="sidebar">
+      <div class="sb-sys-label">// sys.user</div>
+
+      <div class="avatar-wrap">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D4D03AQGtBbsa-ERyRQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726619430578?e=1775088000&v=beta&t=bIOmAyyq4ae9gyzD3pIE-o21idcjYGm6s8xqqkxaSR0"
+          alt="axel">
+      </div>
+
+      <div>
+        <div class="sb-name">Axel Cortes</div>
+        <div class="sb-role">QA Software Analyst</div>
+      </div>
+
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">// contact</div>
+
+      <ul class="contact-list">
+        <li>
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg></div>
+          <div class="c-info">
+            <span class="c-label">email</span>
+            <span class="c-value">
+              &#99;&#111;&#114;&#116;&#101;&#115;&#97;&#120;&#101;&#108;&#55;&#55;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z" />
+            </svg></div>
+          <div class="c-info"><span class="c-label">phone</span><span class="c-value">+1 (956) 254 0058</span></div>
+        </li>
+        <li>
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg></div>
+          <div class="c-info"><span class="c-label">location</span><span class="c-value">Harlingen, TX</span></div>
+        </li>
+      </ul>
+
+      <div class="social-row">
+        <a href="https://github.com/Axelotti" class="social-btn" title="GitHub" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/axel-cortes-11bb0a301/" class="social-btn" title="LinkedIn" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:&#99;&#111;&#114;&#116;&#101;&#115;&#97;&#120;&#101;&#108;&#55;&#55;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+          class="social-btn" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ═══════════════════ MAIN ═══════════════════ -->
+    <main class="main">
+      <nav class="nav">
+        <a href="#" class="active" onclick="showPage('about',this);return false;">About</a>
+        <a href="#" onclick="showPage('resume',this);return false;">Resume</a>
+        <!-- <a href="#" onclick="showPage('projects',this);return false;">Projects</a> -->
+        <a href="#" onclick="showPage('homelab',this);return false;">Homelab</a>
+        <!-- <a href="#" onclick="showPage('contact',this);return false;">Contact</a> -->
+      </nav>
+
+      <!-- ABOUT -->
+      <div id="about" class="page active">
+        <section>
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I am a QA Software Analyst at DataLogic, experienced in testing web and mobile applications to ensure reliable,
+            high-quality releases. Skilled in manual testing, test case execution, and defect tracking using Azure
+            DevOps, with a focus on identifying issues early and supporting stable production environments.
+          </p>
+          <p class="about-text">
+            Continuously working to expand technical skills by developing Playwright automation tests and exploring
+            emerging technologies such as AI tools and private LLM deployments to improve workflows and efficiency.
+          </p>
+        </section>
+
+        <section>
+          <h2>Technology Stack</h2>
+          <div class="tech-grid">
+            <div class="tech-icon" title="Python"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></div>
+            <div class="tech-icon" title="C++"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /></div>
+            <div class="tech-icon" title="Flutter/Dart"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" /></div>
+            <div class="tech-icon" title="HTML">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+            </div>
+            <div class="tech-icon" title="CSS">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            </div>
+            <div class="tech-icon" title="Java">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+            </div>
+            <div class="tech-icon" title="Javascript">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            </div>
+            <div class="tech-icon" title="Ruby">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" />
+            </div>
+            <div class="tech-icon" title="Rust">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" />
+            </div>
+            <div class="tech-icon" title="Linux"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="tech-icon" title="Proxmox">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/proxmox/proxmox-plain-wordmark.svg" />
+            </div>
+            <div class="tech-icon" title="Git"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /></div>
+            <div class="tech-icon" title="Docker"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" /></div>
+            <!-- <div class="tech-icon" title="NumPy"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" /></div> -->
+            <div class="tech-icon" title="Figma"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" /></div>
+            <div class="tech-icon" title="VS Code"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" /></div>
+            <div class="tech-icon" title="Ollama"><span class="ti-text">🦙</span></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>AI Specializations</h2>
+          <div class="spec-grid">
+            <div class="spec-card">
+              <div class="spec-head">
+                <div class="spec-icon">💬</div>
+                <h3>Local LLM Deployment</h3>
+              </div>
+              <p>Experimenting with local AI models using Ollama to explore private AI solutions and internal tooling.
+              </p>
+            </div>
+            <div class="spec-card">
+              <div class="spec-head">
+                <div class="spec-icon">🤖</div>
+                <h3>AI-Augmented Development</h3>
+              </div>
+              <p>Leveraging AI models such as Claude and OpenAI to accelerate debugging, generate test scenarios, and
+                support software development workflows.</p>
+            </div>
+            <div class="spec-card">
+              <div class="spec-head">
+                <div class="spec-icon">👁️</div>
+                <h3>AI for QA Automation</h3>
+              </div>
+              <p>Exploring how AI can support test generation, bug analysis, and automation processes.</p>
+            </div>
+            <div class="spec-card">
+              <div class="spec-head">
+                <div class="spec-icon">🎯</div>
+                <h3>AI Workflow Research</h3>
+              </div>
+              <p>Researching practical ways to integrate AI into development and testing workflows.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RESUME -->
+      <div id="resume" class="page">
+        <section>
+          <div class="doc-container">
+            <img src="assets/portfolio1.png" alt="axel">
+          </div>
+          <div class="doc-container">
+            <img src="assets/portfolio2.png" alt="axel">
+          </div>
+        </section>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id="projects" class="page">
+        <section>
+          <div class="page-header">
+            <h1>Projects</h1><span class="header-tag">// projects.ls</span>
+          </div>
+          <div class="proj-grid">
+            <div class="proj-card">
+              <div class="proj-type">Robotics · LLM</div>
+              <h3>Humanoid Robot AI Brain</h3>
+              <p>End-to-end AI system integrating LLM-based reasoning with real-time sensor data for humanoid robot
+                decision-making at MRL.</p>
+            </div>
+            <div class="proj-card">
+              <div class="proj-type">Computer Vision</div>
+              <h3>Real-Time Person Tracker</h3>
+              <p>YOLO-based multi-person tracking with OpenCV achieving 30fps inference on edge hardware for robotics
+                applications.</p>
+            </div>
+            <div class="proj-card">
+              <div class="proj-type">Agentic AI</div>
+              <h3>Autonomous Agent Framework</h3>
+              <p>Modular framework for building multi-step AI agents with tool-use, memory, and task planning using
+                local LLMs.</p>
+            </div>
+            <div class="proj-card">
+              <div class="proj-type">NLP · Formal Methods</div>
+              <h3>Formal Theorem Prover</h3>
+              <p>LLM-powered formal reasoning engine integrated into robotics software for verifying motion planning
+                correctness.</p>
+            </div>
+            <div class="proj-card">
+              <div class="proj-type">Industrial AI</div>
+              <h3>Industrial Vision System</h3>
+              <p>Defect detection pipeline for manufacturing lines using custom-trained CNN models with 98.4% accuracy
+                on test sets.</p>
+            </div>
+            <div class="proj-card">
+              <div class="proj-type">Deep Learning</div>
+              <h3>Multimodal Emotion Recognition</h3>
+              <p>Fusion model combining facial, vocal, and textual cues for real-time emotion classification in HRI
+                contexts.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- HOMELAB -->
+      <div id="homelab" class="page">
+
+        <div style="display:flex;flex-direction:column;align-items:center;padding:0 48px 60px;gap:18px;">
+          <style>
+            .hl-scene {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 18px;
+              width: 100%;
+              max-width: 460px;
+            }
+
+            .hl-page-title {
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              color: rgba(0, 212, 255, 0.7);
+            }
+
+            .hl-section-label {
+              width: 100%;
+              font-size: 9px;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.14);
+              padding-left: 4px;
+              margin-bottom: -10px;
+            }
+
+            .hl-rack {
+              width: 100%;
+              background: linear-gradient(180deg, #1a1f2a, #111520);
+              border: 2px solid #2a3042;
+              border-radius: 6px 6px 4px 4px;
+              padding: 14px 0 18px;
+              box-shadow: 0 0 0 1px #0d1018, 6px 10px 32px rgba(0, 0, 0, 0.6), inset 1px 0 0 rgba(255, 255, 255, 0.03);
+              position: relative;
+            }
+
+            .hl-rack::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 14px;
+              background: linear-gradient(180deg, #2e3548, #1e2535);
+              border-radius: 4px 4px 0 0;
+              border-bottom: 1px solid #3a4258;
+            }
+
+            .hl-rack-rail {
+              position: absolute;
+              top: 14px;
+              bottom: 18px;
+              width: 18px;
+              background: linear-gradient(180deg, #1c2230, #151a25);
+              border: 1px solid #2a3042;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+              padding: 8px 0;
+              z-index: 2;
+            }
+
+            .hl-rack-rail.left {
+              left: 0;
+            }
+
+            .hl-rack-rail.right {
+              right: 0;
+            }
+
+            .hl-rack-screw {
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: radial-gradient(circle at 35% 35%, #3a4258, #1a1f2a);
+              border: 1px solid #2a3042;
+            }
+
+            .hl-rack-bay {
+              margin: 0 18px;
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+              padding: 4px 2px;
+            }
+
+            .hl-ru {
+              position: relative;
+              border-radius: 3px;
+              cursor: default;
+              transition: filter .15s, transform .15s;
+            }
+
+            .hl-ru.hoverable {
+              cursor: pointer;
+            }
+
+            .hl-ru.hoverable:hover {
+              filter: brightness(1.25);
+              transform: translateX(2px);
+              z-index: 10;
+            }
+
+            .hl-ru-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              border-radius: 3px;
+              display: flex;
+              align-items: center;
+              padding: 0 10px;
+              gap: 8px;
+              border: 1px solid rgba(255, 255, 255, 0.05);
+              overflow: hidden;
+            }
+
+            .hl-ru-inner::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 1px;
+              background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            }
+
+            .hl-ru-label {
+              font-size: 10px;
+              font-weight: 600;
+              letter-spacing: .5px;
+              color: rgba(255, 255, 255, 0.65);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              flex: 1;
+              z-index: 1;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-ru-lights {
+              display: flex;
+              gap: 4px;
+              flex-shrink: 0;
+              z-index: 1;
+            }
+
+            .hl-led {
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+            }
+
+            .hl-led.green {
+              background: #00ff88;
+              box-shadow: 0 0 5px #00ff88;
+              animation: hl-blink 3s infinite;
+            }
+
+            .hl-led.blue {
+              background: #00cfff;
+              box-shadow: 0 0 5px #00cfff;
+              animation: hl-blink 2.3s infinite;
+            }
+
+            .hl-led.amber {
+              background: #ffaa00;
+              box-shadow: 0 0 5px #ffaa00;
+              animation: hl-blink 1.7s infinite;
+            }
+
+            .hl-led.purple {
+              background: #c084fc;
+              box-shadow: 0 0 5px #c084fc;
+              animation: hl-blink 2.8s infinite;
+            }
+
+            .hl-led.off {
+              background: #222;
+            }
+
+            @keyframes hl-blink {
+
+              0%,
+              88%,
+              100% {
+                opacity: 1
+              }
+
+              94% {
+                opacity: .2
+              }
+            }
+
+            .hl-ru-ports {
+              display: flex;
+              gap: 3px;
+              flex-shrink: 0;
+              z-index: 1;
+            }
+
+            .hl-port {
+              width: 7px;
+              height: 5px;
+              border-radius: 1px;
+              background: #0d1018;
+              border: 1px solid #2a3042;
+            }
+
+            .hl-port.on {
+              background: #001a1a;
+              border-color: #005555;
+              box-shadow: 0 0 3px rgba(0, 200, 200, .3);
+            }
+
+            .hl-ru.blank .hl-ru-inner {
+              background: repeating-linear-gradient(90deg, #111520 0 6px, #0f1320 6px 8px);
+            }
+
+            .hl-ru-ai .hl-ru-inner {
+              background: linear-gradient(90deg, #130d20, #1a1030);
+              border-color: rgba(168, 85, 247, 0.2) !important;
+            }
+
+            .hl-ru-ai .hl-ru-inner::before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background: linear-gradient(90deg, transparent 0%, #a855f7 30%, #06b6d4 70%, transparent 100%);
+              background-size: 200% 100%;
+              animation: hl-gpuflow 3s linear infinite;
+            }
+
+            @keyframes hl-gpuflow {
+              0% {
+                background-position: 100% 0
+              }
+
+              100% {
+                background-position: -100% 0
+              }
+            }
+
+            .hl-ru-ai-icon {
+              font-size: 18px;
+              flex-shrink: 0;
+              z-index: 1;
+              line-height: 1;
+            }
+
+            .hl-pi-shelf-ru {
+              height: 56px;
+            }
+
+            .hl-pi-shelf-ru .hl-ru-inner {
+              padding: 0 8px;
+              gap: 0;
+            }
+
+            .hl-pi-shelf-tag {
+              font-size: 8px;
+              letter-spacing: 1.5px;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.2);
+              flex-shrink: 0;
+              padding-right: 8px;
+              margin-right: 4px;
+              border-right: 1px solid rgba(255, 255, 255, 0.07);
+              line-height: 1.4;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-pi-slots {
+              display: flex;
+              gap: 5px;
+              flex: 1;
+              align-items: center;
+              height: 100%;
+            }
+
+            .hl-pi-slot {
+              width: 62px;
+              height: 42px;
+              border-radius: 4px;
+              border: 1px dashed rgba(255, 255, 255, 0.08);
+              background: #090d13;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 2px;
+              flex-shrink: 0;
+              transition: filter .15s, transform .15s;
+              position: relative;
+              cursor: default;
+            }
+
+            .hl-pi-slot.occupied {
+              border: 1px solid rgba(0, 255, 136, 0.2);
+              background: linear-gradient(135deg, #071510, #0a1c14);
+              cursor: pointer;
+            }
+
+            .hl-pi-slot.occupied:hover {
+              filter: brightness(1.35);
+              transform: scale(1.06);
+              z-index: 5;
+            }
+
+            .hl-pi-emoji {
+              font-size: 17px;
+              line-height: 1;
+            }
+
+            .hl-pi-badge {
+              font-size: 7px;
+              color: rgba(0, 255, 136, 0.5);
+              letter-spacing: .5px;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-pi-badge.blue {
+              color: rgba(0, 200, 255, 0.5);
+            }
+
+            .hl-ceph-badge {
+              font-size: 8px;
+              padding: 1px 5px;
+              border-radius: 2px;
+              background: rgba(251, 146, 60, .1);
+              border: 1px solid rgba(251, 146, 60, .22);
+              color: rgba(251, 146, 60, .65);
+              letter-spacing: .5px;
+              flex-shrink: 0;
+              z-index: 1;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-ceph-row {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 6px;
+              padding: 5px 8px;
+              background: rgba(251, 146, 60, 0.04);
+              border: 1px solid rgba(251, 146, 60, 0.1);
+              border-radius: 3px;
+              margin: 2px 0;
+            }
+
+            .hl-ceph-row-label {
+              font-size: 9px;
+              color: rgba(251, 146, 60, 0.4);
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-ceph-dot {
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background: rgba(251, 146, 60, 0.5);
+              box-shadow: 0 0 4px rgba(251, 146, 60, 0.4);
+              animation: hl-blink 2s infinite;
+            }
+
+            .hl-rack-section {
+              font-size: 8px;
+              letter-spacing: 2.5px;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.1);
+              text-align: center;
+              padding: 5px 0 2px;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-tooltip {
+              position: fixed;
+              pointer-events: none;
+              z-index: 200;
+              opacity: 0;
+              transform: translateY(6px);
+              transition: opacity .15s, transform .15s;
+            }
+
+            .hl-tooltip.visible {
+              opacity: 1;
+              transform: translateY(0);
+            }
+
+            .hl-tt-box {
+              background: rgba(8, 12, 18, 0.97);
+              border: 1px solid rgba(0, 200, 255, 0.2);
+              border-radius: 8px;
+              padding: 14px 16px;
+              min-width: 220px;
+              max-width: 275px;
+              box-shadow: 0 14px 44px rgba(0, 0, 0, .7);
+              position: relative;
+              backdrop-filter: blur(12px);
+            }
+
+            .hl-tt-box::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 10px;
+              bottom: 10px;
+              width: 3px;
+              border-radius: 0 2px 2px 0;
+              background: var(--hl-tc, #00cfff);
+            }
+
+            .hl-tt-name {
+              font-family: 'Syne', sans-serif;
+              font-size: 15px;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 2px;
+            }
+
+            .hl-tt-type {
+              font-size: 10px;
+              color: var(--hl-tc, #00cfff);
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              margin-bottom: 10px;
+              opacity: .75;
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-tt-row {
+              display: flex;
+              justify-content: space-between;
+              gap: 12px;
+              font-size: 11px;
+              padding: 5px 0;
+              border-bottom: 1px solid rgba(255, 255, 255, .05);
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-tt-row:last-child {
+              border-bottom: none;
+            }
+
+            .hl-tt-key {
+              color: rgba(255, 255, 255, .3);
+              flex-shrink: 0;
+            }
+
+            .hl-tt-val {
+              color: rgba(255, 255, 255, .7);
+              text-align: right;
+            }
+
+            .hl-tt-services {
+              margin-top: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 4px;
+            }
+
+            .hl-tt-tag {
+              font-size: 12px;
+              padding: 2px 7px;
+              border-radius: 3px;
+              background: rgba(255, 255, 255, .05);
+              border: 1px solid rgba(255, 255, 255, .08);
+              color: rgba(255, 255, 255, .45);
+              font-family: 'JetBrains Mono', monospace;
+            }
+
+            .hl-footer-note {
+              font-size: 12px;
+              color: rgba(255, 255, 255, .45);
+              letter-spacing: 1px;
+              font-family: 'JetBrains Mono', monospace;
+            }
+          </style>
+
+          <div class="hl-scene">
+            <div class="hl-page-title">Homelab</div>
+            <div class="hl-rack">
+              <div class="hl-rack-rail left">
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+              </div>
+              <div class="hl-rack-rail right">
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+                <div class="hl-rack-screw"></div>
+              </div>
+              <div class="hl-rack-bay" id="hl-rack-bay"></div>
+            </div>
+            <div class="hl-footer-note">hover to inspect</div>
+          </div>
+        </div>
+
+        <div class="hl-tooltip" id="hl-tooltip">
+          <div class="hl-tt-box" id="hl-tt-box"></div>
+        </div>
+
+        <script>
+          (function () {
+            const tooltip = document.getElementById('hl-tooltip');
+            const ttBox = document.getElementById('hl-tt-box');
+            function showTT(e, t) {
+              if (!t) return;
+              ttBox.style.setProperty('--hl-tc', t.color || '#00cfff');
+              const rows = (t.rows || []).map(([k, v]) => `<div class="hl-tt-row"><span class="hl-tt-key">${k}</span><span class="hl-tt-val">${v}</span></div>`).join('');
+              const tags = (t.services || []).length ? `<div class="hl-tt-services">${t.services.map(s => `<span class="hl-tt-tag">${s}</span>`).join('')}</div>` : '';
+              ttBox.innerHTML = `<div class="hl-tt-name">${t.name}</div><div class="hl-tt-type">${t.type}</div>${rows}${tags}`;
+              tooltip.classList.add('visible');
+              moveTT(e);
+            }
+            function moveTT(e) {
+              const w = 275, h = 200;
+              let x = e.clientX + 20, y = e.clientY - 10;
+              if (x + w > window.innerWidth - 8) x = e.clientX - w - 16;
+              if (y + h > window.innerHeight - 8) y = window.innerHeight - h - 8;
+              tooltip.style.left = x + 'px'; tooltip.style.top = y + 'px';
+            }
+            function hideTT() { tooltip.classList.remove('visible'); }
+            function attachTT(el, data) {
+              el.addEventListener('mouseenter', e => showTT(e, data));
+              el.addEventListener('mousemove', moveTT);
+              el.addEventListener('mouseleave', hideTT);
+            }
+            const bay = document.getElementById('hl-rack-bay');
+            function addSectionLabel(text) {
+              const d = document.createElement('div');
+              d.className = 'hl-rack-section';
+              d.textContent = `— ${text} —`;
+              bay.appendChild(d);
+            }
+            function addBlank(units = 1) {
+              const el = document.createElement('div');
+              el.className = 'hl-ru blank';
+              el.style.height = (38 * units + 3 * (units - 1)) + 'px';
+              el.innerHTML = `<div class="hl-ru-inner"></div>`;
+              bay.appendChild(el);
+            }
+            function addRU(cfg) {
+              const el = document.createElement('div');
+              el.className = 'hl-ru hoverable';
+              el.style.height = (38 * cfg.units + 3 * (cfg.units - 1)) + 'px';
+              const lights = (cfg.lights || []).map(c => `<div class="hl-led ${c}"></div>`).join('');
+              const ports = (cfg.ports || []).length ? `<div class="hl-ru-ports">${cfg.ports.map(a => `<div class="hl-port ${a ? 'on' : ''}"></div>`).join('')}</div>` : '';
+              const ceph = cfg.ceph ? `<span class="hl-ceph-badge">CEPH</span>` : '';
+              const dimStyle = cfg.dim ? 'opacity:.4;' : '';
+              el.innerHTML = `<div class="hl-ru-inner" style="${cfg.style || ''}${dimStyle}"><div class="hl-ru-lights">${lights}</div><span class="hl-ru-label">${cfg.label}</span>${ceph}${ports}</div>`;
+              if (cfg.tt) attachTT(el, cfg.tt);
+              bay.appendChild(el);
+            }
+            addSectionLabel('AI Workstation');
+            const aiRU = document.createElement('div');
+            aiRU.className = 'hl-ru hoverable hl-ru-ai';
+            aiRU.style.height = (38 * 2 + 3) + 'px';
+            aiRU.innerHTML = `<div class="hl-ru-inner"><div class="hl-ru-lights"><div class="hl-led purple"></div><div class="hl-led green"></div><div class="hl-led blue"></div></div><span class="hl-ru-ai-icon">🖥️</span><span class="hl-ru-label">AI Workstation &nbsp;<span style="font-size:9px;color:rgba(168,85,247,0.5)">· Local LLM</span></span></div>`;
+            attachTT(aiRU, { name: 'Private AI Server', type: 'Desktop · Local Inference', color: '#c084fc', rows: [['Type', 'AI Server'], ['Runtime', 'Ollama / LM Studio'], ['Access', 'Local network only'], ['Privacy', 'No data leaves network']], services: ['Ollama', 'Open WebUI', 'Whisper STT', 'Local LLM'] });
+            bay.appendChild(aiRU);
+            addSectionLabel('Raspberry Pi Shelf (4-slot)');
+            const piShelfRU = document.createElement('div');
+            piShelfRU.className = 'hl-ru hl-pi-shelf-ru';
+            piShelfRU.innerHTML = `<div class="hl-ru-inner" style="background:linear-gradient(90deg,#0a1018,#0d1520);"><span class="hl-pi-shelf-tag">Pi<br>shelf</span><div class="hl-pi-slots" id="hl-pi-slots"></div></div>`;
+            bay.appendChild(piShelfRU);
+            const PI_DATA = [
+              { label: 'Pi-hole', sub: 'Pi 4', badge: 'hl-pi-badge', emoji: '🍓', tt: { name: 'Pi-hole', type: 'Raspberry Pi 4 · DNS / Ad-block', color: '#00ff88', rows: [['Hardware', 'Raspberry Pi 4 (4 GB)'], ['OS', 'RPi OS Lite'], ['Function', 'Network-wide DNS sinkhole'], ['Upstream', 'Cloudflare DoH (1.1.1.1)']], services: ['Pi-hole', 'DNS Sinkhole', 'DHCP fallback'] } },
+              { label: 'Uptime + VPN', sub: 'Pi 5', badge: 'hl-pi-badge blue', emoji: '🍓', tt: { name: 'Uptime Kuma + Twingate', type: 'Raspberry Pi 5 · Monitoring / VPN', color: '#00cfff', rows: [['Hardware', 'Raspberry Pi 5 (4 GB)'], ['OS', 'RPi OS Lite 64-bit'], ['Monitoring', 'Uptime Kuma — all services'], ['Remote access', 'Twingate connector']], services: ['Uptime Kuma', 'Twingate', 'Status page'] } },
+              null, null,
+            ];
+            const piSlotsEl = document.getElementById('hl-pi-slots');
+            PI_DATA.forEach(pi => {
+              const slot = document.createElement('div');
+              if (pi) {
+                slot.className = 'hl-pi-slot occupied';
+                slot.innerHTML = `<span class="hl-pi-emoji">${pi.emoji}</span><span class="${pi.badge}">${pi.sub}</span>`;
+                attachTT(slot, pi.tt);
+              } else {
+                slot.className = 'hl-pi-slot';
+                slot.innerHTML = `<span style="font-size:8px;color:rgba(255,255,255,.1)">—</span>`;
+              }
+              piSlotsEl.appendChild(slot);
+            });
+            addSectionLabel('Proxmox Cluster + Ceph');
+            addRU({ label: 'Proxmox Node 1 · OPNsense', units: 2, style: 'background:linear-gradient(90deg,#071a10,#0c2018);', lights: ['green', 'green', 'blue'], ports: [true, true, false, false], ceph: true, tt: { name: 'Proxmox Node 1', type: 'Hypervisor · Firewall', color: '#00ff88', rows: [['Hypervisor', 'Proxmox VE'], ['Primary VM', 'OPNsense (router/firewall)'], ['Network', 'Handles VLAN, firewall rules'], ['Ceph role', 'OSD + MON']], services: ['Proxmox VE', 'OPNsense VM', 'Ceph OSD', 'Ceph MON'] } });
+            addRU({ label: 'Proxmox Node 2 · Minecraft', units: 2, style: 'background:linear-gradient(90deg,#071a10,#0c2018);', lights: ['green', 'blue', 'amber'], ports: [true, true, false, false], ceph: true, tt: { name: 'Proxmox Node 2', type: 'Hypervisor · Game Server', color: '#00ff88', rows: [['Hypervisor', 'Proxmox VE'], ['Primary VM', 'Windows Server'], ['Game', 'Minecraft Java server'], ['Ceph role', 'OSD + MON']], services: ['Proxmox VE', 'Windows VM', 'Minecraft Server', 'Ceph OSD'] } });
+            addRU({ label: 'Proxmox Node 3 · TBD', units: 2, dim: true, style: 'background:linear-gradient(90deg,#101418,#141820);', lights: ['green', 'off', 'off'], ports: [true, false, false, false], ceph: true, tt: { name: 'Proxmox Node 3', type: 'Hypervisor · Undecided', color: '#6b7280', rows: [['Hypervisor', 'Proxmox VE'], ['Primary VM', 'TBD'], ['Ceph role', 'OSD + MGR'], ['Status', 'Cluster member, VM TBD']], services: ['Proxmox VE', 'Ceph OSD', 'Ceph MGR', '??? TBD'] } });
+            const cephRow = document.createElement('div');
+            cephRow.className = 'hl-ceph-row';
+            cephRow.innerHTML = `<div class="hl-ceph-dot"></div><span class="hl-ceph-row-label">Ceph distributed storage — 3 nodes</span><div class="hl-ceph-dot"></div>`;
+            bay.appendChild(cephRow);
+            addBlank(1);
+            addRU({ label: 'UPS', units: 2, style: 'background:linear-gradient(90deg,#130d1a,#1a1020);', lights: ['green', 'off', 'off'], ports: [], tt: { name: 'UPS', type: 'Power · Uninterruptible Supply', color: '#c084fc', rows: [['Model', 'TBD'], ['Protocol', 'NUT over USB'], ['Protects', 'All rack nodes'], ['Auto-shutdown', 'Yes, via NUT client on each node']], services: ['NUT Server', 'Auto-shutdown', 'Power alerts'] } });
+          })();
+        </script>
+      </div>
+
+      <!-- CONTACT -->
+      <!-- <div id="contact" class="page">
+        <section>
+          <div class="page-header">
+            <h1>Contact</h1><span class="header-tag">// message.send</span>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-bottom:22px;letter-spacing:0.5px;">Have a project or
+            collaboration in mind? Transmit a message below.</p>
+          <div class="contact-form">
+            <input type="text" placeholder="// your_name" />
+            <input type="email" placeholder="// your_email" />
+            <input type="text" placeholder="// subject" />
+            <textarea placeholder="// message..."></textarea>
+            <button class="btn-send">send_msg →</button>
+          </div>
+        </section>
+      </div> -->
+
+      <!-- Portfolio AI Chat Widget -->
+      <style>
+        #chat-widget {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          width: 340px;
+          font-family: sans-serif;
+          z-index: 9999;
+        }
+
+        #chat-toggle {
+          background: rgba(0, 212, 255, 0.7);
+          color: white;
+          border: none;
+          border-radius: 50px;
+          padding: 12px 20px;
+          cursor: pointer;
+          font-size: 15px;
+          float: right;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat-box {
+          display: none;
+          background: #1a1a1a;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+          margin-bottom: 10px;
+        }
+
+        #chat-header {
+          background: rgba(0, 212, 255, 0.7);
+          color: white;
+          padding: 12px 16px;
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        #chat-messages {
+          height: 260px;
+          overflow-y: auto;
+          padding: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .msg {
+          max-width: 85%;
+          padding: 8px 12px;
+          border-radius: 10px;
+          font-size: 13px;
+          line-height: 1.4;
+        }
+
+        .msg.user {
+          background: rgba(0, 212, 255, 0.7);
+          color: white;
+          align-self: flex-end;
+        }
+
+        .msg.bot {
+          background: #2d2d2d;
+          color: #eee;
+          align-self: flex-start;
+        }
+
+        #chat-input-row {
+          display: flex;
+          border-top: 1px solid #333;
+        }
+
+        #chat-input {
+          flex: 1;
+          background: #111;
+          border: none;
+          padding: 10px 12px;
+          color: white;
+          font-size: 13px;
+          outline: none;
+        }
+
+        #chat-send {
+          background: rgba(0, 212, 255, 0.7);
+          border: none;
+          color: white;
+          padding: 10px 14px;
+          cursor: pointer;
+          font-size: 13px;
+        }
+
+        #chat-send:hover {
+          background: rgba(0, 212, 255);
+        }
+      </style>
+
+      <div id="chat-widget">
+        <div id="chat-box">
+          <div id="chat-header">💬 Ask about my portfolio</div>
+          <div id="chat-messages">
+            <div class="msg bot">Hi! Ask me anything about this portfolio.</div>
+          </div>
+          <div id="chat-input-row">
+            <input id="chat-input" type="text" placeholder="Ask a question..." />
+            <button id="chat-send">Send</button>
+          </div>
+        </div>
+        <button id="chat-toggle" class="ai-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+            clip-rule="evenodd" viewBox="0 0 411 512.455">
+            <path fill="#213853" fill-rule="nonzero"
+              d="M372.051 147.174c10.205 1 19.394 5.584 26.275 12.467 7.82 7.818 12.674 18.613 12.674 30.497v40.881c0 11.883-4.854 22.678-12.674 30.497-6.871 6.872-16.042 11.453-26.228 12.463-2.76 35.268-32.451 63.241-68.401 63.241H248.96v17.858c7.963 2.394 13.813 9.792 13.861 18.485h25.01c43.316 0 78.72 35.404 78.72 78.72v49.752c0 5.755-4.665 10.42-10.419 10.42H57.101c-5.754 0-10.419-4.665-10.419-10.42v-49.752c0-43.316 35.404-78.72 78.72-78.72h24.063c.048-8.668 5.917-16.076 13.861-18.479V337.22h-54.737c-35.914 0-65.579-27.915-68.391-63.133-10.704-.735-20.363-5.408-27.524-12.571C4.854 253.697 0 242.902 0 231.019v-40.881c0-11.884 4.854-22.679 12.674-30.497 7.171-7.173 16.847-11.85 27.571-12.574 3.063-34.97 32.609-62.609 68.344-62.609h87.316V61.51a31.659 31.659 0 01-11.948-7.508c-5.724-5.725-9.266-13.635-9.266-22.368 0-8.734 3.542-16.643 9.266-22.368C189.682 3.542 197.592 0 206.324 0c8.733 0 16.643 3.542 22.367 9.267 5.725 5.723 9.267 13.632 9.267 22.367 0 8.733-3.542 16.643-9.267 22.367a31.649 31.649 0 01-11.948 7.509v22.948h86.954c35.772 0 65.342 27.695 68.354 62.716z" />
+            <path fill="#495F7C" d="M238.541 337.22v17.044h-64.797V337.22z" />
+            <path fill="#DD786D"
+              d="M39.977 263.614c-16.53-1.618-29.558-15.658-29.558-32.595v-40.881c0-16.937 13.028-30.977 29.558-32.595v106.071z" />
+            <path fill="#EE9983"
+              d="M39.977 250.267c-16.53-1.618-29.558-15.659-29.558-32.596v-27.533c0-16.937 13.028-30.976 29.558-32.595v92.724z" />
+            <path fill="#DD786D"
+              d="M372.309 263.462c15.914-2.202 28.272-15.948 28.272-32.443v-40.881c0-16.495-12.358-30.241-28.272-32.443v105.767z" />
+            <path fill="#EE9983"
+              d="M372.309 250.115c15.914-2.202 28.272-15.948 28.272-32.444v-27.533c0-16.495-12.358-30.241-28.272-32.442v92.419z" />
+            <path fill="#DFDCDF"
+              d="M108.589 94.937h195.108c31.974 0 58.133 26.159 58.133 58.132v115.54c0 31.973-26.159 58.132-58.133 58.132H108.589c-31.974 0-58.133-26.159-58.133-58.132v-115.54c0-31.973 26.159-58.132 58.133-58.132z" />
+            <path fill="#F9F2F5"
+              d="M104.421 94.937h182.605c31.972 0 58.133 26.168 58.133 58.132v115.54c0 16.042-6.594 30.633-17.203 41.18a57.64 57.64 0 01-21.377 4.096H123.974c-31.965 0-58.133-26.16-58.133-58.132v-115.54c0-25.373 11.859-45.276 38.58-45.276z" />
+            <path fill="#F0AB9E"
+              d="M206.325 10.419c11.716 0 21.214 9.498 21.214 21.215s-9.498 21.214-21.214 21.214c-11.717 0-21.215-9.497-21.215-21.214 0-11.717 9.498-21.215 21.215-21.215z" />
+            <path fill="#EA8D7A"
+              d="M227.501 32.89c-.65 11.133-9.881 19.959-21.177 19.959-9.487 0-17.519-6.228-20.232-14.819.651-11.132 9.882-19.958 21.176-19.958 9.488 0 17.52 6.228 20.233 14.818z" />
+            <path fill="#FAF4F4"
+              d="M168.871 364.682h74.543c4.908 0 8.929 3.986 8.988 8.881h-92.518c.058-4.895 4.08-8.881 8.987-8.881z" />
+            <path fill="#F2EBEC"
+              d="M132.26 383.982h148.364c.225.416.526.8.901 1.132 4.08 3.602 7.715 7.879 10.912 12.302 3.222 4.459 6.025 9.122 8.403 13.424 4.133 7.479 6.384 13.587 7.591 19.801 1.22 6.285 1.412 12.9 1.412 21.225v49.998c0 .058.001.115.004.172h-206.81c.002-.057.004-.114.004-.172v-49.998c0-8.325.192-14.94 1.412-21.225 1.207-6.214 3.457-12.322 7.591-19.801 2.378-4.302 5.182-8.965 8.404-13.424 3.197-4.423 6.831-8.7 10.912-12.302a4.14 4.14 0 00.9-1.132zm160.087.154c35.481 2.346 63.785 32.099 63.785 68.147v20.154a4.002 4.002 0 00-.219-.006h-37.734v-20.565c0-8.754-.215-15.773-1.576-22.787-1.376-7.086-3.89-13.956-8.47-22.243-2.486-4.499-5.457-9.429-8.956-14.272-2.093-2.896-4.367-5.744-6.83-8.428zm63.785 96.626v21.274h-37.957c.002-.057.004-.114.004-.172v-21.097h37.734c.073 0 .146-.002.219-.005zM94.709 502.036H57.101v-21.273c.062.003.124.004.187.004h37.417v21.097c0 .058.002.115.004.172zm-.004-29.605H57.288c-.063 0-.125.002-.187.004v-20.152c0-35.923 28.106-65.596 63.414-68.123-2.454 2.676-4.72 5.517-6.807 8.404-3.499 4.842-6.47 9.772-8.957 14.272-4.58 8.288-7.094 15.157-8.47 22.243-1.362 7.014-1.576 14.033-1.576 22.787v20.565z" />
+            <path fill="#233551" fill-rule="nonzero"
+              d="M98.871 472.431a4.168 4.168 0 010 8.336H57.288a4.169 4.169 0 010-8.336h41.583zM162.039 408.205h89.154c12.956 0 23.565 10.618 23.565 23.565v24.569c0 12.977-10.587 23.565-23.565 23.565h-89.154c-12.96 0-23.565-10.617-23.565-23.565V431.77c0-12.982 10.583-23.565 23.565-23.565z" />
+            <path fill="#EE9A87"
+              d="M162.039 418.624h89.154c7.231 0 13.146 5.918 13.146 13.146v24.569c0 7.228-5.918 13.146-13.146 13.146h-89.154c-7.228 0-13.146-5.915-13.146-13.146V431.77c0-7.231 5.915-13.146 13.146-13.146z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M137.619 159.185c11.492 0 21.899 4.66 29.43 12.192 7.532 7.531 12.192 17.938 12.192 29.43 0 22.985-18.637 41.623-41.622 41.623-11.493 0-21.899-4.66-29.431-12.192s-12.192-17.939-12.192-29.431 4.66-21.899 12.192-29.43c7.532-7.532 17.938-12.192 29.431-12.192z" />
+            <path fill="#3A506D"
+              d="M137.619 165.437c19.535 0 35.37 15.835 35.37 35.37 0 19.534-15.835 35.371-35.37 35.371-19.535 0-35.371-15.837-35.371-35.371 0-19.535 15.836-35.37 35.371-35.37z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M137.619 170.483c8.372 0 15.953 3.395 21.442 8.882 5.487 5.487 8.882 13.07 8.882 21.442 0 8.373-3.395 15.954-8.882 21.443-5.489 5.487-13.07 8.882-21.442 8.882-8.374 0-15.955-3.395-21.442-8.883-5.488-5.487-8.883-13.07-8.883-21.442s3.395-15.954 8.882-21.442c5.489-5.487 13.07-8.882 21.443-8.882z" />
+            <path fill="#AFE3F1"
+              d="M137.619 176.734c13.296 0 24.073 10.777 24.073 24.073 0 13.295-10.777 24.073-24.073 24.073-13.295 0-24.074-10.778-24.074-24.073 0-13.296 10.779-24.073 24.074-24.073z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M275.443 159.185c22.986 0 41.623 18.637 41.623 41.622 0 11.492-4.66 21.899-12.192 29.431-7.531 7.532-17.938 12.192-29.431 12.192-11.492 0-21.899-4.66-29.431-12.192-7.531-7.532-12.191-17.939-12.191-29.431s4.66-21.899 12.191-29.43c7.532-7.532 17.939-12.192 29.431-12.192z" />
+            <path fill="#374B66"
+              d="M275.443 165.437c19.535 0 35.371 15.835 35.371 35.37 0 19.534-15.836 35.371-35.371 35.371-19.535 0-35.371-15.837-35.371-35.371 0-19.535 15.836-35.37 35.371-35.37z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M275.443 170.483c8.373 0 15.954 3.395 21.443 8.882 5.487 5.488 8.882 13.07 8.882 21.442s-3.395 15.955-8.883 21.442c-5.487 5.488-13.07 8.883-21.442 8.883-8.373 0-15.955-3.395-21.442-8.883-5.487-5.487-8.883-13.07-8.883-21.442s3.396-15.954 8.883-21.442c5.488-5.487 13.07-8.882 21.442-8.882z" />
+            <path fill="#AFE3F1"
+              d="M275.443 176.734c13.295 0 24.073 10.777 24.073 24.073 0 13.295-10.778 24.073-24.073 24.073s-24.073-10.778-24.073-24.073c0-13.296 10.778-24.073 24.073-24.073z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M237.741 265.105a6.252 6.252 0 110 12.503h-63.197a6.252 6.252 0 110-12.503h63.197zM191.366 111.116a9.653 9.653 0 016.842 2.835 9.649 9.649 0 012.835 6.843 9.652 9.652 0 01-2.835 6.843 9.648 9.648 0 01-6.842 2.835 9.65 9.65 0 01-6.844-2.835 9.657 9.657 0 01-2.835-6.843 9.653 9.653 0 012.835-6.843 9.657 9.657 0 016.844-2.835z" />
+            <path fill="#3A506D" d="M191.366 115.284a5.51 5.51 0 110 11.02 5.51 5.51 0 110-11.02z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M221.017 111.116a9.642 9.642 0 016.828 2.835h.015a9.649 9.649 0 012.835 6.843 9.652 9.652 0 01-2.835 6.843l-.296.269a9.634 9.634 0 01-13.374-.269h-.016a9.653 9.653 0 01-2.836-6.843 9.65 9.65 0 012.836-6.843l.296-.269a9.63 9.63 0 016.547-2.566z" />
+            <path fill="#3A506D" d="M221.017 115.284a5.51 5.51 0 11-5.511 5.51 5.51 5.51 0 015.511-5.51z" />
+            <path fill="#fff"
+              d="M131.395 180.117c5.614 0 10.164 4.55 10.164 10.163 0 5.615-4.55 10.164-10.164 10.164s-10.164-4.549-10.164-10.164c0-5.613 4.55-10.163 10.164-10.163zM275.757 180.117c5.614 0 10.163 4.55 10.163 10.163 0 5.615-4.549 10.164-10.163 10.164s-10.164-4.549-10.164-10.164c0-5.613 4.55-10.163 10.164-10.163z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M172.22 434.377a9.649 9.649 0 016.843 2.835 9.648 9.648 0 012.835 6.842 9.653 9.653 0 01-2.835 6.844 9.653 9.653 0 01-6.843 2.835 9.653 9.653 0 01-6.843-2.835 9.657 9.657 0 01-2.835-6.844 9.653 9.653 0 012.835-6.842 9.652 9.652 0 016.843-2.835z" />
+            <path fill="#3A506D" d="M172.22 438.544a5.51 5.51 0 11.001 11.02 5.51 5.51 0 01-.001-11.02z" />
+            <path fill="#213853" fill-rule="nonzero"
+              d="M241.012 434.377a9.632 9.632 0 016.827 2.835h.016a9.65 9.65 0 012.836 6.842 9.654 9.654 0 01-2.836 6.844l-.296.269a9.633 9.633 0 01-6.547 2.566 9.642 9.642 0 01-6.828-2.835h-.015a9.653 9.653 0 01-2.835-6.844 9.648 9.648 0 012.835-6.842l.296-.269a9.628 9.628 0 016.547-2.566z" />
+            <path fill="#3A506D" d="M241.012 438.544a5.511 5.511 0 110 11.022 5.511 5.511 0 010-11.022z" />
+          </svg>
+          Ask AI
+        </button>
+      </div>
+
+      <script>
+        const toggle = document.getElementById("chat-toggle");
+        const box = document.getElementById("chat-box");
+        const input = document.getElementById("chat-input");
+        const send = document.getElementById("chat-send");
+        const messages = document.getElementById("chat-messages");
+
+        toggle.onclick = () => {
+          box.style.display = box.style.display === "none" ? "block" : "none";
+        };
+
+        async function askQuestion() {
+          const question = input.value.trim();
+          if (!question) return;
+
+          // Add user message
+          messages.innerHTML += `<div class="msg user">${question}</div>`;
+          input.value = "";
+          messages.scrollTop = messages.scrollHeight;
+
+          // Typing indicator
+          messages.innerHTML += `<div class="msg bot" id="typing">Thinking...</div>`;
+          messages.scrollTop = messages.scrollHeight;
+
+          try {
+            const res = await fetch("https://portfolio-ai.cortesaxel777.workers.dev/", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ question })
+            });
+
+            const data = await res.json();
+            document.getElementById("typing").remove();
+            messages.innerHTML += `<div class="msg bot">${data.answer}</div>`;
+          } catch (err) {
+            document.getElementById("typing").remove();
+            messages.innerHTML += `<div class="msg bot">Something went wrong, try again.</div>`;
+          }
+
+          messages.scrollTop = messages.scrollHeight;
+        }
+
+        send.onclick = askQuestion;
+        input.addEventListener("keydown", e => { if (e.key === "Enter") askQuestion(); });
+      </script>
+
+    </main>
+  </div>
+
+  <script>
+    function showPage(id, el) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      el.classList.add('active');
+    }
+  </script>
+
+</body>
+
+</html>
